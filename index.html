@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link href="dist/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Portfolio Mehul.Dev</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="bg-purple-300 fixed w-full z-10">
+        <div class="relative w-full md:w-[1080px] mx-auto flex flex-col md:flex-row items-center">
+            <!-- Logo -->
+            <a href="index.html" class="py-4 pr-48 cursor-pointer">
+                <img src="mylogo.png" width="120px" height="30px" alt="Logo">
+            </a>
+
+            <!-- Hamburger Menu Icon for Mobile -->
+            <div id="hamburger-menu" class="block absolute top-0 right-0 pr-3 pt-3 md:hidden cursor-pointer">
+                <img src="menu.png" alt="Menu" width="30px">
+                <img src="close.png" alt="Close" width="30px" id="close-icon" class="hidden">
+            </div>
+
+            <!-- Navigation Links for Desktop -->
+            <ul class="hidden md:flex flex-col md:flex-row flex-wrap justify-center gap-2" id="navbar">
+                <li class="font-medium  hover:text-pink-800 py-4 px-2 bg-pink-950 bg-opacity-0 hover:bg-opacity-10 cursor-pointer transition-all duration-150 group relative">
+                    <a href="#" class="py-4">Home</a>
+                    <div class="absolute bottom-0 left-0 h-1 w-full bg-pink-800 hidden group-hover:block transition-all duration-150"></div>
+                </li>
+
+                <li class="font-medium  hover:text-pink-800 py-4 px-2 bg-pink-950 bg-opacity-0 hover:bg-opacity-10 cursor-pointer transition-all duration-150 group relative">
+                    <a href="#about" class="py-4">Profile</a>
+                    <div class="absolute bottom-0 left-0 h-1 w-full bg-pink-800 hidden group-hover:block transition-all duration-150"></div>
+                </li>
+
+                <li class="font-medium f hover:text-pink-800 py-4 px-2 bg-pink-950 bg-opacity-0 hover:bg-opacity-10 cursor-pointer transition-all duration-150 group relative">
+                    <a href="#education" class="py-4">Education</a>
+                    <div class="absolute bottom-0 left-0 h-1 w-full bg-pink-800 hidden group-hover:block transition-all duration-150"></div>
+                </li>
+
+                <li class="font-medium  hover:text-pink-800 py-4 px-2 bg-pink-950 bg-opacity-0 hover:bg-opacity-10 cursor-pointer transition-all duration-150 group relative">
+                    <a href="#skills" class="py-4">Skills</a>
+                    <div class="absolute bottom-0 left-0 h-1 w-full bg-pink-800 hidden group-hover:block transition-all duration-150"></div>
+                </li>
+
+                <li class="relative py-5 pr-3">
+                    <img src="india-flag-icon.png" height="20px" width="20px" alt="Indian Flag">
+                </li>
+                <div class="flex gap-6 py-3">
+                    <a href="#con" class=" pt-1.5 px-3  text-sm text-white bg-black rounded-md font-light">Contact Me</a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section for Desktop -->
+    <section class="relative bg-purple-200 h-screen hidden md:flex">
+        <div class="max-w-[1080px] flex items-center mx-auto hero-content">
+            <div class="max-w-[1080px] flex flex-col gap-4 mt-80 mr-20">
+                <p class="text-pink-800 text-2xl font-bold animate-slideInSlightly">Hello, Welcome</p>
+                <!-- <h1 class="text-black leading-[1.2] font-bold text-[40px]">I am <span id="mehul" class="text-black">Mehul</span> <span class="text-pink-800">Ra</span>ul</h1> -->
+                <h1 id="animated-text" class="text-black leading-[1.2] font-bold text-[40px]"></h1>
+                <p class="text-xl">I'm a web developer who loves to create functional websites. Currently I'm a student at Ajeenkya DY Patil University, where I'm pursuing my Bachelors Degree in Artificial Intelligence and Data Science Engineering and learning DSA and AI with Web-Development.</p>
+                <div class="flex items-center">
+                <strong class="mr-2 text-lg">Connect with me on LinkedIn</strong>
+                <a class="flex items-center " href="https://www.linkedin.com/in/mehul-raul-494025302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img class="transform transition-transform duration-300 hover:scale-125" src="icons8-linkedin-48.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+            <img src="shot.jpg" class="max-w-[340px] rounded-md mr-20 mt-40" alt="Profile Shot">
+        </div>
+    </section>
+
+    <!-- Hero Section for Mobile -->
+    <section class="relative bg-purple-200 h-screen flex md:hidden">
+        <div class="max-w-[1080px] flex flex-col items-center mx-auto hero-content">
+            <div class="max-w-[1080px] flex flex-col gap-4 mt-20 px-4">
+                <p class="text-pink-800 text-2xl font-mullish font-bold animate-slideInSlightly">Hello, Welcome</p>
+                <!-- <h1 class="text-black font-mullish leading-[1.2] font-bold text-[32px]">I am Mehul <span class="text-pink-800">Ra</span>ul</h1> -->
+                <h1 id="animated-text-mobile" class="text-black leading-[1.2] font-bold text-[32px]"></h1>
+                <p>I'm a web developer who loves to create functional websites. Currently I'm a student at Ajeenkya DY Patil University, where I'm pursuing my Bachelors Degree in Artificial Intelligence and Data Science Engineering and learning DSA and AI with Web-Development.</p>
+                <div class="flex items-center">
+                    <strong class="mr-2 text-lg">Connect with me on LinkedIn</strong>
+                    <a class="flex items-center " href="https://www.linkedin.com/in/mehul-raul-494025302?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><img class="transform transition-transform duration-300 hover:scale-125" src="icons8-linkedin-48.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+            <img src="shot.jpg" class="max-w-[200px] rounded-md mt-10" alt="Profile Shot">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="relative bg-purple-200 h-screen">
+        <div class="max-w-[1080px] flex items-center flex-col mx-auto pt-40 px-4">
+            <h2 class="heading text-black font-mullish leading-[1.2] font-bold text-[32px]">About Me</h2>
+            <p class="text-base">
+                Hello, welcome to my profile! I'm Mehul Raul, a passionate web developer who thrives on mastering new technologies. This website serves as my personal portfolio, showcasing my projects and skills in web development.
+            </p>
+            <p class="text-base">
+                Connect with me on LinkedIn and other platforms for more updates on my projects and to join me on this exciting journey of continuous learning and growth in web development. Your thoughts and feedback mean a lot to me, so please don't hesitate to reach out. Let's connect and innovate together!
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="relative bg-purple-200 h-screen">
+        <div class="max-w-[1080px] flex items-center flex-col mx-auto pt-40 px-4">
+            <h2 class="heading text-black font-mullish leading-[1.2] font-bold text-[32px]">Education</h2>
+            <ul class="text-base mt-6">
+                <li>
+                    <span class="font-mullish text-black">Bachelor's degree in Artificial Intelligence and Data Science Engineering at Ajeenkya DY Patil University.</span>
+                    <ul class="ml-4">
+                        <li>Studying courses in Data Structures and Algorithms (DSA) and Artificial Intelligence (AI).</li>
+                        <li>Completed projects in machine learning and web development using Python and JavaScript.</li>
+                    </ul>
+                </li>
+                <li class="mt-4">
+                    <span class="font-mullish text-black">High School: Kamalnayan Bajaj High School, Pune</span>
+                </li>
+                <li class="mt-4">
+                    <span class="font-mullish text-black">Secondary Education: Beacon High School, Pune</span>
+                    <ul class="ml-4">
+                        <li>Achieved academic success with a strong foundation in various subjects.</li>
+                        <li>Participated in sports and cultural activities.</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="relative bg-purple-200 h-screen">
+        <div class="max-w-[1080px] flex items-center flex-col mx-auto pt-40 px-4">
+            <h2 class="heading text-black font-mullish leading-[1.2] font-bold text-[32px]">Skills</h2>
+            <p class="text-base">
+                Here are some of the skills I have acquired and continue to develop:
+            </p>
+            <ul class="text-base mt-6">
+                <li>Web Development: HTML, CSS, JavaScript, React</li>
+                <li>Programming Languages: Python, Java, JavaScript</li>
+                <li>Data Science: Machine Learning, Data Analysis</li>
+                <li>Tools & Technologies: Git, GitHub, VS Code, Jupyter Notebooks</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section id="con" class="relative bg-purple-200 h-screen">
+        <div class="max-w-[1080px] flex flex-col items-center mx-auto pt-40 px-4">
+            <h2 class="text-2xl font-bold mb-4">Contact me</h2>
+            <form id="contactForm" class="w-full max-w-lg">
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                        <input id="fullName" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="text" placeholder="Full Name">
+                    </div>
+                    <div class="w-full md:w-1/2 px-3">
+                        <input id="emailAddress" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="email" placeholder="Email Address">
+                    </div>
+                </div>
+                <div class="flex flex-wrap -mx-3 mb-6">
+                    <div class="w-full px-3">
+                        <input id="mobileNumber" class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="tel" placeholder="Mobile Number">
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <button id="submitBtn" class="bg-pink-800 hover:bg-white hover:text-pink-800 shadow-md text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- <section class="relative bg-purple-200 h-screen">
+        <div class="max-w-[1080px] flex items-center flex-col mx-auto pt-40 px-4">
+        <h2>Contact me</h2>
+        <div>
+            <input type="text" placeholder="Full Name"> <input type="email" placeholder="Email Address">
+            <div><input type="number" placeholder="Mobile Number"><button>Submit</button></div>
+           
+        </div>
+    </div>
+    </section> -->
+
+    
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+   document.addEventListener('DOMContentLoaded', () => {
+    const text = "I am Mehul Raul";
+    const animatedText = document.getElementById('animated-text');
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            if (text.slice(index, index + 2) === "Ra") {
+                animatedText.innerHTML += `<span class="text-pink-800">Ra</span>`;
+                index += 2;
+            } else {
+                animatedText.innerHTML += text.charAt(index);
+                index++;
+            }
+            setTimeout(type, 100);
+        }
+    }
+
+    type();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const text = "I am Mehul Raul";
+    const animatedTextMobile = document.getElementById('animated-text-mobile');
+    let index = 0;
+
+    function type() {
+        if (index < text.length) {
+            if (text.slice(index, index + 2) === "Ra") {
+                animatedTextMobile.innerHTML += `<span class="text-pink-800">Ra</span>`;
+                index += 2;
+            } else {
+                animatedTextMobile.innerHTML += text.charAt(index);
+                index++;
+            }
+            setTimeout(type, 100);
+        }
+    }
+
+    type();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        const fullNameInput = document.getElementById('fullName');
+        const emailAddressInput = document.getElementById('emailAddress');
+        const mobileNumberInput = document.getElementById('mobileNumber');
+
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+
+            // Validate form inputs (simple example)
+            if (fullNameInput.value.trim() === '' || emailAddressInput.value.trim() === '' || mobileNumberInput.value.trim() === '') {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            // Form data object
+            const formData = {
+                fullName: fullNameInput.value.trim(),
+                emailAddress: emailAddressInput.value.trim(),
+                mobileNumber: mobileNumberInput.value.trim()
+            };
+
+            // Example: Send form data to backend or perform other actions
+            console.log(formData); // Replace with your form handling logic
+
+            // Optionally, clear form inputs after submission
+            fullNameInput.value = '';
+            emailAddressInput.value = '';
+            mobileNumberInput.value = '';
+
+            // Show success message or redirect to a thank you page
+            alert('Form submitted successfully!');
+        });
+    });
+
+
+
+
+
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.getElementById('hamburger-menu');
+            const navbar = document.getElementById('navbar');
+            const navLinks = navbar.querySelectorAll('a');
+    
+            hamburgerMenu.addEventListener('click', () => {
+                navbar.classList.toggle('hidden');
+            });
+    
+            // Close navbar when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Scroll to the section smoothly
+                    const targetId = link.getAttribute('href').substring(1); // Get target id without the '#'
+                    const targetSection = document.getElementById(targetId);
+    
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+    
+                    // Hide the navbar on mobile
+                    navbar.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
