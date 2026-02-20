@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mehul Raul — AI & ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- ── NAV ──────────────────────────────────────────────────── -->
+    <nav id="nav">
+    <a href="#home" class="nav-logo">Mehul.DEV</a>
+
+    <ul class="nav-links">
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+    </ul>
+
+    <div style="display:flex;align-items:center;gap:12px;justify-self:end;">
+        <button id="theme-toggle" onclick="toggleTheme()" title="Toggle theme" style="background:none;border:1px solid var(--border);border-radius:4px;padding:8px 12px;cursor:none;color:var(--text);font-family:var(--font-mono);font-size:13px;transition:border-color 0.2s,color 0.2s;" onmouseover="this.style.borderColor='var(--accent)';this.style.color='var(--accent)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text)'">☀ Light</button>
+        <a href="mailto:mehulraul18@gmail.com" class="nav-cta">Let's Talk</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+        </button>
+    </div>
+    </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#experience" class="mobile-link">Experience</a>
+    <a href="#projects" class="mobile-link">Projects</a>
+    <a href="#skills" class="mobile-link">Skills</a>
+    <a href="#education" class="mobile-link">Education</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- ── HERO ─────────────────────────────────────────────────── -->
+  <section id="home">
+    <div class="glow-blob glow-1"></div>
+    <div class="glow-blob glow-2"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <p class="hero-tag">Hello, Welcome</p>
+          <h1 class="hero-name">I am Mehul <em>Raul</em></h1>
+          <p class="hero-role">// Building intelligent systems that scale</p>
+          <p class="hero-bio">
+            I design and ship <strong>end-to-end AI pipelines</strong> — from RAG systems and LLM agents to computer vision models. Currently finishing my BE in AI &amp; Data Science with a <strong>9.55 GPA</strong>, and actively looking for opportunities to create real-world impact with AI.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+              View Projects
+            </a>
+            <a href="mailto:mehulraul18@gmail.com" class="btn-ghost">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Get in Touch
+            </a>
+          </div>
+          <div class="social-links">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/mehul-raul-494025302" target="_blank" class="social-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/mehul-raul" target="_blank" class="social-link" title="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <!-- HuggingFace -->
+            <a href="https://huggingface.co/mehuldev" target="_blank" class="social-link" title="Hugging Face">
+              <svg viewBox="0 0 24 24" fill="currentColor"><text y="18" font-size="18">🤗</text></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right" style="align-items:center;">
+            <div class="stat-card reveal" style="text-align:center; padding:36px 40px;">
+                <img src="IMG_5190.PNG" alt="Mehul Raul" style="width:200px;height:200px;object-fit:cover;border-radius:50%;border:3px solid rgba(200,245,66,0.3);margin-bottom:20px;">
+                <div style="font-family:var(--font-display);font-size:22px;color:#fff;margin-bottom:6px;">Mehul Raul</div>
+                <div style="font-family:var(--font-mono);font-size:12px;color:var(--muted);letter-spacing:0.06em;">BE Artificial Intelligence<br>& Data Science</div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ────────────────────────────────────────────── -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-label">Work Experience</div>
+      <h2 class="section-title">Where I've<br><em style="font-style:italic;">shipped things.</em></h2>
+      <div class="reveal">
+        <div class="exp-card">
+          <div class="exp-header">
+            <div>
+              <div class="exp-company">Scalefull Technologies</div>
+              <div class="exp-role">Machine Learning Engineer Intern</div>
+            </div>
+            <div class="exp-period">Nov 2024 — Jan 2025</div>
+          </div>
+          <ul class="exp-points">
+            <li>Designed <strong>ML inference APIs</strong> under technical mentorship, implementing model-serving endpoints for computer vision applications.</li>
+            <li>Built and trained a <strong>product image classification model</strong> on 10,000+ images across multiple e-commerce categories.</li>
+            <li>Achieved initial <strong>~70% accuracy</strong>, then pivoted to a transfer-learning approach using <strong>MobileNetV2 + FastAPI</strong>, hitting <strong>85% accuracy</strong> with faster inference and lower compute.</li>
+            <li><strong>Containerized the full ML service using Docker</strong> and authored setup documentation and reusable code templates for the company's proposed ML service offerings.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ──────────────────────────────────────────────── -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label">Selected Projects</div>
+      <h2 class="section-title">Things I've<br><em style="font-style:italic;">built & deployed.</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- Featured: JurisAI -->
+        <div class="project-card featured reveal">
+          <div class="project-content">
+            <div class="project-number">01 — Featured</div>
+            <h3 class="project-name">JurisAI — Legal Document Assistant</h3>
+            <p class="project-desc">
+              A conversational AI system that intelligently searches across multiple legal documents, performs live web searches, and engages in natural multi-turn dialogue. Built for lawyers and legal researchers who need fast, accurate answers from complex document sets.
+            </p>
+            <ul class="project-highlights">
+              <li>Advanced RAG pipeline with <strong>hybrid search (vector + keyword)</strong> and cross-encoder reranking</li>
+              <li><strong>78% Retrieval Precision@5</strong> with 4.2s average query latency</li>
+              <li>Multi-tenant JWT authentication with <strong>user-specific document isolation</strong></li>
+              <li>PostgreSQL + pgvector for 3072-dim embeddings; deployed on Railway with CI/CD via GitHub Actions</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">LangChain</span>
+              <span class="tech-tag">RAG</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">pgvector</span>
+              <span class="tech-tag">LLMs</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">CI/CD</span>
+            </div>
+            <div class="project-links">
+              <a href="https://jurisai-weld.vercel.app/" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                Live Demo
+              </a>
+              <!-- <a href="https://github.com/mehul-raul" target="_blank" class="project-link">
+                <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                GitHub
+              </a> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- VAE Photo Restoration -->
+        <div class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3 class="project-name">VAE-Based AI Photo Restoration</h3>
+          <p class="project-desc">
+            End-to-end image restoration pipeline combining a custom UNet-VAE for scratch removal & denoising with an LLM component for semantic captioning. Multimodal AI in one coherent workflow.
+          </p>
+          <ul class="project-highlights">
+            <li>Trained on <strong>20k face images</strong>, achieving SSIM of <strong>0.77</strong> and L1 loss of 0.039</li>
+            <li>LangChain-orchestrated pipeline: restoration → enhancement → LLM captioning</li>
+            <li>FastAPI backend, deployed on <strong>Hugging Face Spaces</strong></li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Keras</span>
+            <span class="tech-tag">VAE</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">LLMs</span>
+          </div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/mehuldev/ai-photo-restoration" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- TruDiagnosis -->
+        <div class="project-card reveal">
+          <div class="project-number">03</div>
+          <h3 class="project-name">TruDiagnosis — Multi-Disease Diagnostic AI</h3>
+          <p class="project-desc">
+            All-in-one health diagnostic platform covering 7 conditions using a hybrid pipeline of classical ML and deep learning. Built for rapid, accessible diagnosis workflows.
+          </p>
+          <ul class="project-highlights">
+            <li>7 conditions: diabetes, heart disease, liver disease, breast cancer, COVID-19, lung cancer, pneumonia</li>
+            <li><strong>Hybrid pipeline</strong> — Random Forest/SVM for tabular data + custom CNN for chest X-ray images</li>
+            <li>Interactive Streamlit UI with <strong>real-time predictions</strong> and patient data visualizations</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">Scikit-learn</span>
+            <span class="tech-tag">CNN</span>
+            <span class="tech-tag">Streamlit</span>
+            <span class="tech-tag">Pandas</span>
+          </div>
+          <div class="project-links">
+            <a href="https://diagnostic-6ymu7exp5qh8ctkg8dp9bb.streamlit.app" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo
+            </a>
+          </div>
+        </div>
+
+        <!-- NPChef -->
+        <div class="project-card reveal">
+          <div class="project-number">04</div>
+          <h3 class="project-name">NPChef — RAG Recipe Assistant</h3>
+          <p class="project-desc">
+            v2 of a recipe generation assistant upgraded to a full RAG pipeline. Users upload custom recipe PDFs and get contextual answers powered by semantic search and a locally hosted LLM.
+          </p>
+          <ul class="project-highlights">
+            <li>v2: full RAG — document upload, LangChain chunking, HuggingFace embeddings, <strong>FAISS vector search</strong></li>
+            <li>Migrated from API-dependent Mixtral to <strong>locally hosted TinyLlama</strong>, eliminating rate limits</li>
+            <li>Deployed on HuggingFace Spaces; live conversational recipe assistance</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">FAISS</span>
+            <span class="tech-tag">TinyLlama</span>
+            <span class="tech-tag">HF Transformers</span>
+          </div>
+          <div class="project-links">
+            <a href="https://huggingface.co/spaces/mehuldev/NPChef" target="_blank" class="project-link">
+              <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+              Live Demo (v2)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ────────────────────────────────────────────────── -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-label">Technical Skills</div>
+      <h2 class="section-title">My<br><em style="font-style:italic;">Tech Stack.</em></h2>
+      <div class="skills-layout">
+        <div class="skill-group reveal">
+          <div class="skill-group-title">AI / ML Frameworks</div>
+          <div class="skill-pills">
+            <span class="skill-pill">LangChain</span>
+            <span class="skill-pill">TensorFlow</span>
+            <span class="skill-pill">Keras</span>
+            <span class="skill-pill">Scikit-learn</span>
+            <span class="skill-pill">HuggingFace</span>
+            <span class="skill-pill">FAISS</span>
+            <span class="skill-pill">pgvector</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Backend & APIs</div>
+          <div class="skill-pills">
+            <span class="skill-pill">FastAPI</span>
+            <span class="skill-pill">RESTful APIs</span>
+            <span class="skill-pill">Streamlit</span>
+            <span class="skill-pill">SQLAlchemy</span>
+            <span class="skill-pill">JWT Auth</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Databases</div>
+          <div class="skill-pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">pgvector</span>
+            <span class="skill-pill">FAISS</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">DevOps & Cloud</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Docker</span>
+            <span class="skill-pill">GitHub Actions</span>
+            <span class="skill-pill">CI/CD</span>
+            <span class="skill-pill">Azure</span>
+            <span class="skill-pill">HuggingFace Spaces</span>
+            <span class="skill-pill">Railway</span>
+            <span class="skill-pill">Render</span>
+            <span class="skill-pill">Vercel</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Core Concepts</div>
+          <div class="skill-pills">
+            <span class="skill-pill">LLMs</span>
+            <span class="skill-pill">RAG Systems</span>
+            <span class="skill-pill">Computer Vision</span>
+            <span class="skill-pill">Deep Learning</span>
+            <span class="skill-pill">NLP</span>
+            <span class="skill-pill">VAE</span>
+            <span class="skill-pill">Transfer Learning</span>
+          </div>
+        </div>
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Languages & Tools</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">C++ (Basic)</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Git</span>
+            <span class="skill-pill">Postman</span>
+            <span class="skill-pill">VS Code</span>
+            <span class="skill-pill">Jupyter</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ─────────────────────────────────────────────── -->
+  <section id="education">
+    <div class="container">
+      <div class="section-label">Education</div>
+      <h2 class="section-title">Academic<br><em style="font-style:italic;">Journey.</em></h2>
+      <div class="edu-timeline">
+        <div class="edu-item reveal">
+          <div class="edu-period">Nov 2022 — May 2026</div>
+          <div class="edu-institution">Ajeenkya DY Patil School of Engineering</div>
+          <div class="edu-degree">BE in Artificial Intelligence and Data Science</div>
+          <div class="edu-meta">
+            <span class="edu-badge">SE GPA: 8.7</span>
+            <span class="edu-badge">TE GPA: 9.26</span>
+            <span class="edu-badge">BE GPA: 9.55</span>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-period">Higher Secondary</div>
+          <div class="edu-institution">Kamalnayan Bajaj Higher Secondary School</div>
+          <div class="edu-degree">PCM — Physics, Chemistry, Mathematics</div>
+          <div class="edu-meta">
+            <span class="edu-badge" style="border-color:rgba(74,240,200,0.2);background:rgba(74,240,200,0.07);color:var(--accent2);">74%</span>
+          </div>
+        </div>
+        <div class="edu-item reveal">
+          <div class="edu-period">Secondary</div>
+          <div class="edu-institution">Beacon High School</div>
+          <div class="edu-degree">Secondary Education</div>
+          <div class="edu-meta">
+            <span class="edu-badge" style="border-color:rgba(240,98,146,0.2);background:rgba(240,98,146,0.07);color:#f06292;">83%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ──────────────────────────────────────────── -->
+  <section id="achievements">
+    <div class="container">
+      <div class="section-label">Recognition</div>
+      <h2 class="section-title">Achievements &<br><em style="font-style:italic;">Certifications.</em></h2>
+      <div class="achievements-grid">
+        <div class="ach-card reveal">
+          <div class="ach-rank">2nd</div>
+          <div class="ach-title">College PBL Competition — Advanced Library Management System</div>
+          <div class="ach-event">Ajeenkya DY Patil SOE</div>
+        </div>
+        <div class="ach-card reveal">
+          <div class="ach-rank">3rd</div>
+          <div class="ach-title">Runner-up, IoT Exhibition — Automated Street Lamps</div>
+          <div class="ach-event">Ajeenkya DY Patil SOE</div>
+        </div>
+        <div class="ach-card reveal">
+          <div class="ach-rank">3rd</div>
+          <div class="ach-title">Code-IT Coding Event, Data Science Domain</div>
+          <div class="ach-event">Technovanza 2025</div>
+        </div>
+      </div>
+
+      <div class="section-label" style="margin-top:0">Certifications</div>
+      <div class="certs-list">
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">Introduction to Generative AI</div><div class="cert-org">Google</div></div></div>
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">AI Engineer Skill Certification</div><div class="cert-org">One Roadmap</div></div></div>
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">AWS Academy Cloud Foundations</div><div class="cert-org">Amazon Web Services</div></div></div>
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">LLM Augmentation with RAG</div><div class="cert-org">NVIDIA</div></div></div>
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">Introduction to Machine Learning</div><div class="cert-org">Simplilearn</div></div></div>
+        <div class="cert-item reveal"><div class="cert-dot"></div><div><div class="cert-name">Abouv AI Stage Assessment</div><div class="cert-org">Abouv</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── RESEARCH ──────────────────────────────────────────────── -->
+
+  <!-- ── CONTACT ───────────────────────────────────────────────── -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label">Contact</div>
+      <div class="contact-inner">
+        <div class="contact-text reveal">
+          <h2 class="section-title" style="margin-bottom:20px">Let's build<br><em style="font-style:italic;">something great.</em></h2>
+          <p>Open to full-time roles, internships, freelance projects, and collaborations in AI/ML. If you're building something intelligent, I'd love to be involved.</p>
+          <div class="contact-items">
+            <a href="mailto:mehulraul18@gmail.com" class="contact-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></div>
+              <div class="contact-detail">mehulraul18@gmail.com<span>Email</span></div>
+            </a>
+            <a href="tel:+918421387125" class="contact-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+              <div class="contact-detail">+91 84213 87125<span>Phone</span></div>
+            </a>
+            <a href="https://www.linkedin.com/in/mehul-raul-494025302" target="_blank" class="contact-item">
+              <div class="contact-icon"><svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></div>
+              <div class="contact-detail">Mehul Raul<span>LinkedIn</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="reveal">
+          <!-- <a href="mailto:mehulraul18@gmail.com" class="email-cta">mehulraul18<br>@gmail.com</a> -->
+          <a  class="email-cta">Don't forget to connect with me</a>
+          <div class="social-links">
+            <a href="https://github.com/mehul-raul" target="_blank" class="social-link" title="GitHub">
+              <svg viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://huggingface.co/mehuldev" target="_blank" class="social-link" title="Hugging Face">🤗</a>
+            <a href="https://www.linkedin.com/in/mehul-raul-494025302" target="_blank" class="social-link" title="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ────────────────────────────────────────────────── -->
+  <footer>
+    <p>© 2026 <span>Mehul Raul</span> — All rights reserved</p>
+    <p>Pune, Maharashtra, IN 🇮🇳</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
